@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardano Wallet - Conway</title>
+    <link rel="stylesheet" href="wallet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h1><i class="fas fa-brain"></i> Conway</h1>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="index.html"><i class="fas fa-hashtag"></i> Explore</a></li>
+                    <li><a href="index.html"><i class="fas fa-bell"></i> Notifications</a></li>
+                    <li><a href="index.html"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="index.html"><i class="fas fa-bookmark"></i> Bookmarks</a></li>
+                    <li><a href="index.html"><i class="fas fa-user"></i> Profile</a></li>
+                    <li class="active"><a href="#"><i class="fas fa-wallet"></i> Wallet</a></li>
+                    <li><a href="index.html"><i class="fas fa-ellipsis-h"></i> More</a></li>
+                </ul>
+            </nav>
+            <button class="tweet-btn"><i class="fas fa-feather"></i></button>
+            <div class="user-profile">
+                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User">
+                <div class="user-info">
+                    <h4>Charles Hoskinson</h4>
+                    <p>@alex_morgan</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="header">
+                <h2><i class="fas fa-wallet"></i> Cardano Wallet</h2>
+                <div class="header-actions">
+                    <button class="icon-btn"><i class="fas fa-sync-alt"></i></button>
+                    <button class="icon-btn"><i class="fas fa-cog"></i></button>
+                </div>
+            </div>
+
+            <!-- Wallet Overview -->
+            <div class="wallet-overview">
+                <div class="balance-card">
+                    <h3>Total Balance</h3>
+                    <div class="balance-amount">
+                        <span class="amount">1,245.78</span>
+                        <span class="currency">ADA</span>
+                    </div>
+                    <div class="balance-value">
+                        <span class="value">$1,029.40</span>
+                        <span class="change positive">+2.5%</span>
+                    </div>
+                </div>
+
+                <div class="quick-actions">
+                    <button class="action-btn">
+                        <i class="fas fa-arrow-up"></i>
+                        <span>Send</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-arrow-down"></i>
+                        <span>Receive</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-exchange-alt"></i>
+                        <span>Swap</span>
+                    </button>
+                    <button class="action-btn">
+                        <i class="fas fa-history"></i>
+                        <span>History</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Asset List -->
+            <div class="assets-section">
+                <div class="section-header">
+                    <h3>Assets</h3>
+                    <button class="icon-btn"><i class="fas fa-plus"></i></button>
+                </div>
+
+                <div class="asset-list">
+                    <!-- ADA Asset -->
+                    <div class="asset-card">
+                        <div class="asset-info">
+                            <div class="asset-icon">
+                                <i class="fas fa-coins"></i>
+                            </div>
+                            <div class="asset-details">
+                                <h4>Cardano</h4>
+                                <p>ADA</p>
+                            </div>
+                        </div>
+                        <div class="asset-balance">
+                            <span class="amount">1,245.78</span>
+                            <span class="value">$1,029.40</span>
+                        </div>
+                    </div>
+
+                    <!-- Sample Token -->
+                    <div class="asset-card">
+                        <div class="asset-info">
+                            <div class="asset-icon token">
+                                <i class="fas fa-diamond"></i>
+                            </div>
+                            <div class="asset-details">
+                                <h4>Conway</h4>
+                                <p>CONWAY</p>
+                            </div>
+                        </div>
+                        <div class="asset-balance">
+                            <span class="amount">5,000.00</span>
+                            <span class="value">$250.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Sample Token -->
+                    <div class="asset-card">
+                        <div class="asset-info">
+                            <div class="asset-icon token">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="asset-details">
+                                <h4>Midnight</h4>
+                                <p>NIGHT</p>
+                            </div>
+                        </div>
+                        <div class="asset-balance">
+                            <span class="amount">250.50</span>
+                            <span class="value">$125.25</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recent Transactions -->
+            <div class="transactions-section">
+                <div class="section-header">
+                    <h3>Recent Transactions</h3>
+                    <button class="view-all">View All</button>
+                </div>
+
+                <div class="transaction-list">
+                    <!-- Transaction Item -->
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-icon sent">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Sent ADA</h4>
+                                <p>To: addr1q9f0asd...fh35</p>
+                                <p class="timestamp">2 hours ago</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount negative">
+                            <span class="amount">-25.00 ADA</span>
+                            <span class="value">$8.25</span>
+                        </div>
+                    </div>
+
+                    <!-- Transaction Item -->
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-icon received">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Received ADA</h4>
+                                <p>From: addr1q8d3f...9hj2</p>
+                                <p class="timestamp">1 day ago</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount positive">
+                            <span class="amount">+100.00 ADA</span>
+                            <span class="value">$33.00</span>
+                        </div>
+                    </div>
+
+                    <!-- Transaction Item -->
+                    <div class="transaction-item">
+                        <div class="transaction-info">
+                            <div class="transaction-icon sent">
+                                <i class="fas fa-arrow-up"></i>
+                            </div>
+                            <div class="transaction-details">
+                                <h4>Staking Reward</h4>
+                                <p>Cardano Staking</p>
+                                <p class="timestamp">3 days ago</p>
+                            </div>
+                        </div>
+                        <div class="transaction-amount positive">
+                            <span class="amount">+2.35 ADA</span>
+                            <span class="value">$0.78</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Right Sidebar -->
+        <aside class="right-sidebar">
+            <div class="staking-card">
+                <h3>Staking</h3>
+                <div class="staking-info">
+                    <div class="staking-stats">
+                        <p>Rewards Earned</p>
+                        <span class="amount">12.45 ADA</span>
+                        <span class="value">$9.92</span>
+                    </div>
+                    <div class="staking-stats">
+                        <p>Staked Amount</p>
+                        <span class="amount">850.00 ADA</span>
+                        <span class="value">$705.25</span>
+                    </div>
+                </div>
+                <button class="stake-btn">Manage Staking</button>
+            </div>
+
+            <div class="market-card">
+                <h3>Market Overview</h3>
+                <div class="market-item">
+                    <div class="market-info">
+                        <span class="symbol">ADA</span>
+                        <span class="name">Cardano</span>
+                    </div>
+                    <div class="market-price">
+                        <span class="price">$0.82</span>
+                        <span class="change positive">+1.2%</span>
+                    </div>
+                </div>
+                <div class="market-item">
+                    <div class="market-info">
+                        <span class="symbol">BTC</span>
+                        <span class="name">Bitcoin</span>
+                    </div>
+                    <div class="market-price">
+                        <span class="price">$119,150</span>
+                        <span class="change negative">-0.8%</span>
+                    </div>
+                </div>
+                <div class="market-item">
+                    <div class="market-info">
+                        <span class="symbol">ETH</span>
+                        <span class="name">Ethereum</span>
+                    </div>
+                    <div class="market-price">
+                        <span class="price">$3,820</span>
+                        <span class="change positive">+2.1%</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="wallet-security">
+                <h3>Security</h3>
+                <div class="security-status">
+                    <div class="status-item">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>2FA Enabled</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-lock"></i>
+                        <span>Backup Created</span>
+                    </div>
+                    <div class="status-item">
+                        <i class="fas fa-key"></i>
+                        <span>Recovery Phrase</span>
+                    </div>
+                </div>
+                <button class="security-btn">Enhance Security</button>
+            </div>
+        </aside>
+    </div>
+
+    <script src="wallet.js"></script>
+</body>
+</html>
